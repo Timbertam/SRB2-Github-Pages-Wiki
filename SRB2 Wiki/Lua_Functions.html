@@ -875,7 +875,7 @@ You can view its source [Alt+Mayús.+e]" accesskey=e><span>View source</span></a
 </td>
 <td>boolean
 </td>
-<td>Returns true if <code>flags</code> contains all the <a href=Chaos_Emerald.html title="Chaos Emerald">emerald</a> flags from <code>EMERALD1</code> to <code>EMERALD7</code>. Intended to be used for checking either the Single Player/Co-op emeralds collected by all players (<code>emeralds</code>), or the multiplayer emeralds (for gametypes <a href=Match.html title=Match>Match</a>, <a href=CTF.html class=mw-redirect title=CTF>CTF</a> and <a href=Tag.html title=Tag>Tag</a>) collected by a particular player (<code>player.powers[pw_emeralds]</code>).
+<td>Returns true if <code>flags</code> contains all the <a href=Chaos_Emerald.html title="Chaos Emerald">emerald</a> flags from <code>EMERALD1</code> to <code>EMERALD7</code>. Intended to be used for checking either the Single Player/Co-op emeralds collected by all players (<code>emeralds</code>), or the multiplayer emeralds (for gametypes <a href=Match.html title=Match>Match</a>, <a href=Capture_the_Flag.html class=mw-redirect title=CTF>CTF</a> and <a href=Tag.html title=Tag>Tag</a>) collected by a particular player (<code>player.powers[pw_emeralds]</code>).
 </tr>
 <tr>
 <td><span id=ColorOpposite></span><code><b>ColorOpposite</b>(<i>int</i> color)</code>
@@ -2645,21 +2645,21 @@ Calling the function with no arguments will clear the custom settings.
 </td>
 <td>boolean
 </td>
-<td>Returns true if the current gametype has the gametype rule <code>GTR_TEAMS</code> (<a href=Team_Match.html class=mw-redirect title="Team Match">Team Match</a> or <a href=CTF.html class=mw-redirect title=CTF>CTF</a>); otherwise returns false.
+<td>Returns true if the current gametype has the gametype rule <code>GTR_TEAMS</code> (<a href=Team_Match.html class=mw-redirect title="Team Match">Team Match</a> or <a href=Capture_the_Flag.html class=mw-redirect title=CTF>CTF</a>); otherwise returns false.
 </tr>
 <tr>
 <td><span id=G_GametypeHasSpectators></span><code><b>G_GametypeHasSpectators</b>()</code>
 </td>
 <td>boolean
 </td>
-<td>Returns true if the current gametype has the gametype rule <code>GTR_SPECTATORS</code> (<a href=Match.html title=Match>Match</a>, <a href=CTF.html class=mw-redirect title=CTF>CTF</a> or <a href=Tag.html title=Tag>Tag</a>); otherwise returns false.
+<td>Returns true if the current gametype has the gametype rule <code>GTR_SPECTATORS</code> (<a href=Match.html title=Match>Match</a>, <a href=Capture_the_Flag.html class=mw-redirect title=CTF>CTF</a> or <a href=Tag.html title=Tag>Tag</a>); otherwise returns false.
 </tr>
 <tr>
 <td><span id=G_RingSlingerGametype></span><code><b>G_RingSlingerGametype</b>()</code>
 </td>
 <td>boolean
 </td>
-<td>Returns true if the current gametype has the gametype rule <code>GTR_RINGSLINGER</code> (<a href=Match.html title=Match>Match</a>, <a href=CTF.html class=mw-redirect title=CTF>CTF</a> or <a href=Tag.html title=Tag>Tag</a>) or if the <a href=Console_Variables.html#ringslinger title=Console/Variables><code>ringslinger</code></a> cvar is enabled; otherwise returns false.
+<td>Returns true if the current gametype has the gametype rule <code>GTR_RINGSLINGER</code> (<a href=Match.html title=Match>Match</a>, <a href=Capture_the_Flag.html class=mw-redirect title=CTF>CTF</a> or <a href=Tag.html title=Tag>Tag</a>) or if the <a href=Console_Variables.html#ringslinger title=Console/Variables><code>ringslinger</code></a> cvar is enabled; otherwise returns false.
 </tr>
 <tr>
 <td><span id=G_PlatformGametype></span><code><b>G_PlatformGametype</b>()</code>
@@ -3344,7 +3344,7 @@ Calling the function with no arguments will clear the custom settings.
 </td>
 <td>nil
 </td>
-<td>In <a href=Team_Match.html class=mw-redirect title="Team Match">Team Match</a> or <a href=CTF.html class=mw-redirect title=CTF>CTF</a>, this changes <code>missile</code>'s color to match the player's team color (red if player is in the red team, or steel blue if in the blue team). In any other gametype, this will do nothing.
+<td>In <a href=Team_Match.html class=mw-redirect title="Team Match">Team Match</a> or <a href=Capture_the_Flag.html class=mw-redirect title=CTF>CTF</a>, this changes <code>missile</code>'s color to match the player's team color (red if player is in the red team, or steel blue if in the blue team). In any other gametype, this will do nothing.
 </tr>
 <tr>
 <td><span id=P_SPMAngle></span><code><b>P_SPMAngle</b>(<i><a href=Lua_Userdata_structures.html#mobj_t class=mw-redirect title="Mobj t">mobj_t</a></i> source, <i>int</i> type, <i>angle_t</i> angle, [<i>int</i> allowaim, [<i>int</i> flags2]])</code>
